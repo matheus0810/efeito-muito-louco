@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <style>
+        .home-hero .title {
+            margin-bottom: 32px;
+            font-size: 38px;
+            line-height: 1
+        }
+
+        html[lang*=es i] .home-hero .title {
+            font-size: 34px
+        }
+
+        .home-hero .title .typing-effect {
+            display: inline-block;
+            text-align: left
+        }
+
+        .home-hero .title .typing-effect .words-wrapper {
+            display: grid;
+            overflow: hidden;
+            height: .9em
+        }
+
+        .home-hero .title .typing-effect .words-wrapper .word {
+            color: #19c1ce;
+            width: 0%;
+            max-width: -webkit-max-content;
+            max-width: -moz-max-content;
+            max-width: max-content;
+            overflow: hidden;
+            height: inherit;
+            word-break: break-all;
+            -webkit-animation: typing 2s linear infinite alternate, change-word 12s steps(3) infinite;
+            animation: typing 2s linear infinite alternate, change-word 12s steps(3) infinite
+        }
+
+        .home-hero .title .typing-effect .words-wrapper .word::before {
+            content: " ";
+            display: inline-block
+        }
+
+
+        @-webkit-keyframes typing {
+
+            90%,
+            100% {
+                width: 100%
+            }
+        }
+
+        @keyframes typing {
+
+            90%,
+            100% {
+                width: 100%
+            }
+        }
+
+        @-webkit-keyframes change-word {
+            100% {
+                -webkit-transform: translateY(-300%);
+                transform: translateY(-300%)
+            }
+        }
+
+        @keyframes change-word {
+            100% {
+                -webkit-transform: translateY(-300%);
+                transform: translateY(-300%)
+            }
+        }
+    </style>
+
+</head>
+
+<body
+    class="home page-template page-template-page-templates page-template-page-home page-template-page-templatespage-home-php page page-id-8">
+    <span id="main-header-anchor"></span>
+
+
+    <main>
+        <section class="home-hero">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-8">
+                        <h1 class="title">
+                            Gere mais <span class="typing-effect">
+                                <span class="words-wrapper">
+                                    <span class="word">clientes</span>
+                                    <span class="word">leads</span>
+                                    <span class="word">vendas</span>
+                                </span>
+                            </span>
+                            <br />
+                            para seu negócio
+                        </h1>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+</body>
+
+</html>
